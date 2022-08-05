@@ -1,0 +1,53 @@
+###
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Thermomix",
+    "descriptiopm": "Hace la comida solita",
+    "price": 990,
+    "department": "cocina",
+    "available": true,
+    "created_at": "2022-08-04"
+}
+
+###
+
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+   "username": "joseangel",
+    "email": "jose@js.com",
+    "password": "123456",
+    "active": true,
+    "role": "estudiante"
+}
+
+###
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "jose@js.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3000/api/products
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJlY2Q5YzgyYzBiOGU3ZmNiNTAwYjU2Iiwicm9sZSI6ImVzdHVkaWFudGUiLCJpYXQiOjE2NTk2ODk0MjV9.98kNKrRrB6NZ50dv7In7voRP1JODwP5e52eZVM6q9MY
+
+###
+GET http://localhost:3000/api/products/add/62ea599aa6cac980bd2fbeac
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJlY2Q5YzgyYzBiOGU3ZmNiNTAwYjU2Iiwicm9sZSI6ImVzdHVkaWFudGUiLCJpYXQiOjE2NTk2ODk0MjV9.98kNKrRrB6NZ50dv7In7voRP1JODwP5e52eZVM6q9MY
+
+
+###
+GET http://localhost:3000/api/products/cart
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJlY2Q5YzgyYzBiOGU3ZmNiNTAwYjU2Iiwicm9sZSI6ImVzdHVkaWFudGUiLCJpYXQiOjE2NTk2ODk0MjV9.98kNKrRrB6NZ50dv7In7voRP1JODwP5e52eZVM6q9MY
+
+###
+GET http://localhost:3000/api/users/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJlY2Q5YzgyYzBiOGU3ZmNiNTAwYjU2Iiwicm9sZSI6ImVzdHVkaWFudGUiLCJpYXQiOjE2NTk2ODk0MjV9.98kNKrRrB6NZ50dv7In7voRP1JODwP5e52eZVM6q9MY
